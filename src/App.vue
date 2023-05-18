@@ -55,7 +55,7 @@ export default {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   color: #83807c;
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
 }
 

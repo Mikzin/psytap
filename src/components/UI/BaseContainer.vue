@@ -6,9 +6,8 @@
 
 <style scoped>
 .container {
-  /* max-width: 800px; */
   width: 100%;
-  margin: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
