@@ -11,7 +11,9 @@
           href="https://www.instagram.com/corgi_chewie"
           target="#blank"
           class="social-link"
-          >Instagram</a
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+          Instagram</a
         >
       </base-button>
       <base-button>
@@ -19,7 +21,9 @@
           href="https://www.tiktok.com/@corgi_chewie"
           target="#blank"
           class="social-link"
-          >TikTok</a
+        >
+          <ion-icon name="logo-tiktok"></ion-icon>
+          TikTok</a
         >
       </base-button>
       <base-button>
@@ -27,7 +31,19 @@
           href="https://www.youtube.com/@corgi_chewie"
           target="#blank"
           class="social-link"
-          >Youtube</a
+        >
+          <ion-icon name="logo-youtube"></ion-icon>
+          Youtube</a
+        >
+      </base-button>
+      <base-button>
+        <a
+          href="https://www.tinkoff.ru/cf/1RPjsmfRfHt"
+          target="#blank"
+          class="social-link"
+        >
+          <ion-icon name="card-outline"></ion-icon>
+          Чуи на вкусняшку</a
         >
       </base-button>
     </base-container>
@@ -82,6 +98,10 @@ body {
   text-decoration: none;
   color: #dbdfea;
   width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,

@@ -1,7 +1,7 @@
 <template>
-  <button class="button">
+  <div class="button">
     <slot></slot>
-  </button>
+  </div>
 </template>
 
 <style scoped>
@@ -10,10 +10,6 @@
   background-color: #8294c4;
   color: #dbdfea;
   width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 24px;
   padding: 12px 8px;
   cursor: pointer;
