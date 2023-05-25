@@ -48,6 +48,9 @@
       </base-button>
     </base-container>
     <base-container>
+      <base-carousel></base-carousel>
+    </base-container>
+    <base-container>
       <the-footer></the-footer>
     </base-container>
   </div>
@@ -57,9 +60,15 @@
 import TheFooter from './components/layout/TheFooter.vue';
 import BaseContainer from './components/UI/BaseContainer.vue';
 import BaseButton from './components/UI/BaseButton.vue';
+import BaseCarousel from './components/UI/BaseCarousel.vue';
 
 export default {
-  components: { TheFooter, BaseContainer, BaseButton },
+  components: {
+    TheFooter,
+    BaseContainer,
+    BaseButton,
+    BaseCarousel,
+  },
 };
 </script>
 
@@ -86,7 +95,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .logo {
@@ -96,7 +105,7 @@ body {
 
 .social-link {
   text-decoration: none;
-  color: #dbdfea;
+  color: #fff;
   width: 100%;
   display: flex;
   gap: 8px;
