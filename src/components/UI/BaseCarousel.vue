@@ -10,12 +10,9 @@
       @mouseenter="stopSlideShow"
       @mouseleave="startSlideShow"
       @click="openFullScreen"
+      loading="lazy"
     />
-    <button
-      @click="nextSlide, stopSlideShow"
-      class="slider__button"
-      v-if="countWidth()"
-    >
+    <button @click="nextSlide" class="slider__button" v-if="countWidth()">
       <ion-icon name="chevron-forward-outline"></ion-icon>
     </button>
   </div>
@@ -164,6 +161,7 @@ button {
 
 .carousel__image {
   max-width: 84%;
+  width: 700px;
   background-size: cover;
   background-position: center;
   border-radius: 24px;
