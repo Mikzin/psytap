@@ -17,8 +17,8 @@
     </button>
   </div>
 
-  <div class="fullscreen-overlay" v-if="isFullScreen" @click="closeFullScreen">
-    <img :src="currentSlide" alt="Slide" class="fullscreen-image" />
+  <div class="fullscreen__overlay" v-if="isFullScreen" @click="closeFullScreen">
+    <img :src="currentSlide" alt="Slide" class="fullscreen__image" />
   </div>
 </template>
 
@@ -169,7 +169,7 @@ button {
   cursor: pointer;
 }
 
-.fullscreen-overlay {
+.fullscreen__overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -183,7 +183,7 @@ button {
   cursor: pointer;
 }
 
-.fullscreen-image {
+.fullscreen__image {
   max-width: 90%;
   max-height: 90%;
 }
