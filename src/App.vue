@@ -2,7 +2,7 @@
   <div class="main">
     <base-container>
       <img src="./images/logo.jpg" alt="main photo" class="logo" />
-      <h1>Корги Чуи</h1>
+      <h1>fdhdfhdfhdfh</h1>
       <h2>@corgi_chewie</h2>
     </base-container>
     <base-container>
