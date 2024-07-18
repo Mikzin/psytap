@@ -2,52 +2,67 @@
   <div class="main">
     <base-container>
       <img src="./images/logo.jpg" alt="main photo" class="logo" />
-      <h1>fdhdfhdfhdfh</h1>
-      <h2>@corgi_chewie</h2>
+      <h1>Зинчук Михаил</h1>
+      <h2>Психолог</h2>
+      <h2>Специалист по клинической психологии</h2>
+      <h2>Рационально-эмотивно-поведенческий (РЭПТ) консультант</h2>
     </base-container>
     <base-container>
+      <div>
+        <ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="chevron-down-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon>
+      </div>
+    </base-container>
+    <base-container>
+      <h2>Формат работы:</h2>
+      <div class="work-info">
+        <ion-icon name="laptop-outline" class="social-link icon"></ion-icon>
+        <div class="work-info_block">
+          <h3>Онлайн консультация</h3>
+          <div class="work-info_text">
+            из любой точки мира в Skype, WhatsApp, Telegram, GoogleMeet. Равно
+            эффективный аналог очной встречи для клиентов из других городов,
+            регионов, стран.
+            <br />Длительность — 50 минут <br />Стоимость — 2000 рублей
+          </div>
+        </div>
+      </div>
+    </base-container>
+
+    <base-container>
+      <div>
+        <ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="chevron-down-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon
+        ><ion-icon name="remove-outline" class="icon-divider"></ion-icon>
+      </div>
+    </base-container>
+
+    <base-container>
+      <h2>Связаться со мной:</h2>
       <base-button>
-        <a
-          href="https://www.instagram.com/corgi_chewie"
-          target="#blank"
-          class="social-link"
-        >
-          <ion-icon name="logo-instagram"></ion-icon>
-          Instagram</a
+        <a href="https://t.me/mik_zin" target="#blank" class="social-link">
+          <ion-icon name="paper-plane-outline"></ion-icon>
+          Telegram</a
         >
       </base-button>
       <base-button>
-        <a
-          href="https://www.tiktok.com/@corgi_chewie"
-          target="#blank"
-          class="social-link"
-        >
-          <ion-icon name="logo-tiktok"></ion-icon>
-          TikTok</a
-        >
-      </base-button>
-      <base-button>
-        <a
-          href="https://www.youtube.com/@corgi_chewie"
-          target="#blank"
-          class="social-link"
-        >
-          <ion-icon name="logo-youtube"></ion-icon>
-          Youtube</a
-        >
-      </base-button>
-      <base-button>
-        <a
-          href="https://www.tinkoff.ru/cf/1RPjsmfRfHt"
-          target="#blank"
-          class="social-link"
-        >
-          <ion-icon name="card-outline"></ion-icon>
-          Чуи на вкусняшку</a
+        <a href="https://wa.me/79675106752" target="#blank" class="social-link">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          WhatsApp</a
         >
       </base-button>
     </base-container>
     <base-container>
+      <h2>Образование:</h2>
       <base-carousel></base-carousel>
     </base-container>
     <base-container>
@@ -113,8 +128,42 @@ body {
   justify-content: center;
 }
 
-h1,
-h2 {
+h1 {
   margin: 8px 0 6px;
+}
+
+h2 {
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 8px 0 0;
+}
+
+.icon {
+  color: #83807c;
+  width: 50px;
+  height: 50px;
+}
+
+.work-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-info_block {
+  width: 50%;
+}
+
+.work-info_text {
+  font-size: 14px;
+}
+
+.icon-divider {
+  height: 18px;
+  width: 18px;
 }
 </style>

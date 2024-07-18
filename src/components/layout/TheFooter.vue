@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <h3 class="footer__text">Made with ❤️ by Mikhail Zinchuk</h3>
+    <h3 class="footer__text">Made with ❤️</h3>
   </footer>
 </template>
 

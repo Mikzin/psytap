@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 700px) {
   .container {
-    margin: 0;
+    margin: 5px;
   }
 }
 </style>
