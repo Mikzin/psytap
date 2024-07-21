@@ -25,10 +25,9 @@
         <div class="work-info_block">
           <h3>Онлайн консультация</h3>
           <div class="work-info_text">
-            из любой точки мира в Skype, WhatsApp, Telegram, GoogleMeet. Равно
-            эффективный аналог очной встречи для клиентов из других городов,
-            регионов, стран.
-            <br />Длительность — 50 минут <br />Стоимость — 2000 рублей
+            из любой точки мира в Skype, WhatsApp, Telegram, GoogleMeet.
+            <br />Длительность — <b>50 минут</b> <br />Стоимость —
+            <b>2000 рублей</b>
           </div>
         </div>
       </div>
