@@ -30,8 +30,8 @@
 
 <script>
 import image1 from '../../images/1.jpg';
-import image2 from '../../images/2.jpeg';
-import image3 from '../../images/3.png';
+import image2 from '../../images/2.jpg';
+import image3 from '../../images/3.jpg';
 
 export default {
   data() {
@@ -117,6 +117,7 @@ export default {
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .pagination__button--active {
