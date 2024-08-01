@@ -1,13 +1,15 @@
 <template>
   <div class="slider">
     <img
-      :src="currentSlide"
+      v-for="(slide, index) in preloadedImages"
+      :key="index"
+      :src="slide"
       alt="Slide"
       class="carousel__image"
+      :class="{ active: index === currentIndex }"
       @mouseenter="stopSlideShow"
       @mouseleave="startSlideShow"
       @click="openFullScreen"
-      loading="lazy"
     />
   </div>
 
@@ -40,11 +42,15 @@ export default {
       currentIndex: 0,
       isHovered: false,
       isFullScreen: false,
+      preloadedImages: [],
     };
   },
   computed: {
     currentSlide() {
-      return this.slides[this.currentIndex];
+      return (
+        this.preloadedImages[this.currentIndex] ||
+        this.slides[this.currentIndex]
+      );
     },
   },
   methods: {
@@ -71,8 +77,22 @@ export default {
       this.stopSlideShow();
       this.startSlideShow();
     },
+    preloadImages() {
+      this.slides.forEach((slide, index) => {
+        const img = new Image();
+        img.src = slide;
+        img.onload = () => {
+          console.log(`Image ${index + 1} loaded`);
+          this.preloadedImages[index] = img.src;
+        };
+        img.onerror = (error) => {
+          console.error(`Failed to load image ${index + 1}:`, error);
+        };
+      });
+    },
   },
   mounted() {
+    this.preloadImages();
     this.startSlideShow();
   },
   beforeDestroy() {
@@ -101,6 +121,11 @@ export default {
   border-radius: 24px;
   transition: all 300ms ease 0s;
   cursor: pointer;
+  display: none;
+}
+
+.carousel__image.active {
+  display: block;
 }
 
 .pagination {
@@ -110,7 +135,7 @@ export default {
 }
 
 .pagination__button {
-  width: 10px;
+  width: 12px;
   height: 12px;
   background-color: #c4c4c4;
   border: none;
@@ -118,6 +143,7 @@ export default {
   margin: 0 5px;
   cursor: pointer;
   flex-shrink: 0;
+  transition: background-color 0.3s ease;
 }
 
 .pagination__button--active {
@@ -151,10 +177,22 @@ export default {
     max-height: 400px;
   }
 
+  .pagination__button {
+    width: 12px;
+    height: 12px;
+  }
+
   .carousel__image {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination__button {
+    width: 10px;
+    height: 10px;
   }
 }
 </style>
