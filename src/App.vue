@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <base-container>
-      <img src="./images/logo.jpg" alt="main photo" class="logo" />
+      <img :src="logo" alt="main photo" class="logo" />
       <h1>Зинчук Михаил</h1>
       <h2>Психолог</h2>
       <h2>Специалист по клинической психологии</h2>
@@ -74,6 +74,7 @@ import TheFooter from './components/layout/TheFooter.vue';
 import BaseContainer from './components/UI/BaseContainer.vue';
 import BaseButton from './components/UI/BaseButton.vue';
 import BaseCarousel from './components/UI/BaseCarousel.vue';
+import logo from '/images/photo.jpg';
 
 export default {
   components: {
@@ -82,6 +83,11 @@ export default {
     BaseButton,
     BaseCarousel,
   },
+  data() {
+    return {
+      logo,
+    };
+  }
 };
 </script>
 
